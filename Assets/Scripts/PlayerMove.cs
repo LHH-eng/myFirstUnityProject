@@ -33,7 +33,7 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.W)) // GetKeyDown - 버튼 누를때 이동(dir), GetKey - 버튼 누른상태일때 이동(dir * speed_속도 조절됨)
         {
             // Vector3 dir = Vector3.forward; // 월드좌표(절대좌표) 기준의 앞방향
-            Vector3 dir = transform.forward; // 로컬좌표 기준으 앞방향
+            Vector3 dir = transform.forward; // 로컬좌표 기준의 앞방향
 
             transform.position = transform.position + dir * speed * Time.deltaTime;
         }
