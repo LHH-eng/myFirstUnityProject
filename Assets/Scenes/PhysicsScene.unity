@@ -7683,10 +7683,12 @@ MonoBehaviour:
   sensingAreaAPos: {fileID: 1554174863}
   spawnHeight: 2
   pusher: {fileID: 1708485367}
+  pusher2: {fileID: 0}
   sensingAreaA: {fileID: 1554174864}
+  sensingAreaB: {fileID: 0}
   moveDistance: 26
   pushSpeed: 0.2
-  waitTime: 3
+  waitTime: 2
 --- !u!1 &2021492571
 GameObject:
   m_ObjectHideFlags: 0
@@ -7719,8 +7721,10 @@ MonoBehaviour:
   prefab: {fileID: 0}
   sensingAreaAPos: {fileID: 0}
   spawnHeight: 2
-  pusher: {fileID: 2063372897}
-  sensingAreaA: {fileID: 322268765}
+  pusher: {fileID: 0}
+  pusher2: {fileID: 2063372897}
+  sensingAreaA: {fileID: 0}
+  sensingAreaB: {fileID: 322268765}
   moveDistance: 26
   pushSpeed: 0.2
   waitTime: 3
