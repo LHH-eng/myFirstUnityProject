@@ -320,12 +320,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109189530}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.4, z: -0.146}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.4000028, z: -0.14600007}
   m_LocalScale: {x: 0.02, y: 1.5, z: 0.24800625}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 423033961}
+  m_Father: {fileID: 484492058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &109189532
 BoxCollider:
@@ -1357,7 +1357,6 @@ GameObject:
   - component: {fileID: 423033965}
   - component: {fileID: 423033964}
   - component: {fileID: 423033963}
-  - component: {fileID: 423033962}
   m_Layer: 0
   m_Name: Clock_BODY
   m_TagString: Untagged
@@ -1377,27 +1376,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 8.460153, y: 0.09390599, z: 8.460153}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 109189531}
-  - {fileID: 1306038471}
-  - {fileID: 1430530186}
+  m_Children: []
   m_Father: {fileID: 2052894445}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &423033962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 423033960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf22241edb0f4b342a224540a38241e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  hour: {fileID: 109189531}
-  min: {fileID: 1306038471}
-  sec: {fileID: 1430530186}
 --- !u!136 &423033963
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1640,6 +1621,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 433132025}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &484492057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484492058}
+  m_Layer: 0
+  m_Name: HourPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &484492058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484492057}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 8.460153, y: 0.093906, z: 8.460153}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 109189531}
+  m_Father: {fileID: 2052894445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &485844356
 GameObject:
   m_ObjectHideFlags: 0
@@ -1751,6 +1764,38 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1856700711}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &501715984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 501715985}
+  m_Layer: 0
+  m_Name: SecPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &501715985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 501715984}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 8.460153, y: 0.093906, z: 8.460153}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1430530186}
+  m_Father: {fileID: 2052894445}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &555361533
 GameObject:
@@ -2258,6 +2303,38 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 698477919}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &727271700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727271701}
+  m_Layer: 0
+  m_Name: MinPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &727271701
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727271700}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalScale: {x: 8.460153, y: 0.09390603, z: 8.460155}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1306038471}
+  m_Father: {fileID: 2052894445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744519389
 GameObject:
   m_ObjectHideFlags: 0
@@ -3005,12 +3082,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1306038470}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.3, z: -0.206}
-  m_LocalScale: {x: 0.02, y: 1.5, z: 0.36745232}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.2999947, z: -0.20600006}
+  m_LocalScale: {x: 0.02, y: 1.5, z: 0.36745235}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 423033961}
+  m_Father: {fileID: 727271701}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1306038472
 BoxCollider:
@@ -3229,12 +3306,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1430530185}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: -0.126}
-  m_LocalScale: {x: 0.02, y: 1.5, z: 0.20919886}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.5000052, z: -0.09378002}
+  m_LocalScale: {x: 0.02, y: 1.5, z: 0.14475097}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 423033961}
+  m_Father: {fileID: 501715985}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1430530187
 BoxCollider:
@@ -4638,6 +4715,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2052894445}
+  - component: {fileID: 2052894446}
   m_Layer: 0
   m_Name: Clock_ASSY
   m_TagString: Untagged
@@ -4659,8 +4737,26 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 423033961}
+  - {fileID: 484492058}
+  - {fileID: 727271701}
+  - {fileID: 501715985}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2052894446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052894444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf22241edb0f4b342a224540a38241e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClockScript
+  hourPivot: {fileID: 484492058}
+  minPivot: {fileID: 727271701}
+  secPivot: {fileID: 501715985}
 --- !u!1 &2084991880
 GameObject:
   m_ObjectHideFlags: 0

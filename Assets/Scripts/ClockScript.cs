@@ -13,9 +13,9 @@ using UnityEngine.UIElements;
 /// </summary>
 public class ClockScript : MonoBehaviour
 {
-    public Transform hour;
-    public Transform min;
-    public Transform sec;
+    public Transform hourPivot;
+    public Transform minPivot;
+    public Transform secPivot;
     Quaternion startQH;
     Quaternion startQM;
     Quaternion startQS;
@@ -37,14 +37,14 @@ public class ClockScript : MonoBehaviour
         // 초침: 60초 = 360도
         startAngleS = now.Second / 60f * 360f;
 
-        hour = transform.parent;
-        min = transform.parent;
-        sec = transform.parent;
+        hourPivot = transform.parent;
+        minPivot = transform.parent;
+        secPivot = transform.parent;
 
         // 초기 회전 적용
-        hour.localRotation = Quaternion.AngleAxis(startAngleH, Vector3.up);
-        min.localRotation = Quaternion.AngleAxis(startAngleM, Vector3.up);
-        sec.localRotation = Quaternion.AngleAxis(startAngleS, Vector3.up);
+        hourPivot.localRotation = Quaternion.AngleAxis(startAngleH, Vector3.forward);
+        minPivot.localRotation = Quaternion.AngleAxis(startAngleM, Vector3.forward);
+        secPivot.localRotation = Quaternion.AngleAxis(startAngleS, Vector3.forward);
 
     }
 
@@ -60,9 +60,9 @@ public class ClockScript : MonoBehaviour
         // 시침: 43200초(12시간)에 360도
         float angleH = startAngleH + (time / 43200f * 360f);
 
-        sec.localRotation = Quaternion.AngleAxis(angleS, Vector3.back);
-        min.localRotation = Quaternion.AngleAxis(angleM, Vector3.back);
-        hour.localRotation = Quaternion.AngleAxis(angleH, Vector3.back);
+        secPivot.localRotation = Quaternion.AngleAxis(angleS, Vector3.back);
+        minPivot.localRotation = Quaternion.AngleAxis(angleM, Vector3.back);
+        hourPivot.localRotation = Quaternion.AngleAxis(angleH, Vector3.back);
 
     }
 }
