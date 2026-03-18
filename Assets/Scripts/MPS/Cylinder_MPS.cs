@@ -1,13 +1,14 @@
 using System.Collections;
 using UnityEngine;
+using static Cylinder_MPS;
 
 /// <summary>
-/// PLC의 출력신호(ex Y20)를 받아 솔레노이드에 신호가 들어온다.
+/// PLC의 출력신호(ex. Y20)를 받아 솔레노이드에 신호가 들어온다.
 /// 솔레노이드 신호에 따라 실린더 로드가 전진, 후진한다.
-/// 속성: 후방LS(리미트스위치)의 PLC 신호, 전방LS(리미트스위치)의 PLC 신호, LS0의 SL1의 MeshRenderer
-///       SOL0(솔레노이드신호)의 PLC신호, SOL1(솔레노이드신호)의 PLC신호
-///       실린더 Rod의 Transform, 앞방향 maxPos, 뒷방향 minPos(이동 축의 최소,최대값)
-///       실리더 이동속도(공압), return스피드(단동 솔레노이드에서만 사용)
+/// 속성: 후방LS의 PLC신호, 전방LS의 PLC신호, LS0과 LS1의 MeshRenderer
+///       SOL0의 PLC신호, SOL1의 PLC 신호
+///       실린더 Rod의 Transform, 앞방향 maxPos, 뒷방향 minPos(이동 축의 최소, 최대값)
+///       실린더 이동속도(공압), 리턴스피드(단동 솔레노이드에서만 사용)
 ///       단동, 복동 열거형
 /// </summary>
 public class Cylinder_MPS : MonoBehaviour
@@ -29,41 +30,79 @@ public class Cylinder_MPS : MonoBehaviour
     public Transform rod;
     public float maxPos;
     public float minPos;
-    public float speed = 2f; // 공압 조절 밸브에 따른 속도
-    public float returnSpeed = 3f; // 단동 솔레노이드의 복귀 속도
+    public float speed = 2; // 공압 조절 밸브에 따른 속도
+    public float returnSpeed = 3; // 단동 솔레노이드의 복귀 속도
     public MeshRenderer mrBackLS;
     public MeshRenderer mrFrontLS;
     public bool isMoving;
+    public bool isBack; // Rod가 뒤에있는지, 앞에 있는지 확인
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(MoveForwardBySignal());
-        StartCoroutine(MoveBackwardBySignal());
+        TurnOnLS(true, true);
+
+        StartCoroutine(MoveForwardBySigal());
+        StartCoroutine(MoveBackwardBySigal());
+    }
+
+    void TurnOnLS(bool isBackLS, bool isOn)
+    {
+        switch (isBackLS)
+        {
+            case true: // Back
+                if (isOn)
+                {
+                    mrBackLS.material.color = new Color(1, 0, 0, 0.7f);
+                    backSignal_LS = true;
+                }
+                else
+                {
+                    mrBackLS.material.color = new Color(0, 0, 0, 0.7f);
+                    backSignal_LS = false;
+                }
+
+                break;
+            case false: // Front
+                if (isOn)
+                {
+                    mrFrontLS.material.color = new Color(1, 0, 0, 0.7f);
+                    frontSignal_LS = true;
+                }
+                else
+                {
+                    mrFrontLS.material.color = new Color(0, 0, 0, 0.7f);
+                    frontSignal_LS = false;
+                }
+                break;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        // 키 입력으로 PLC Mock(Mockup_테스트제품) 신호주기
+        // 키입력으로 PLC Mock 신호 주기
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            backSignal_LS = !backSignal_LS; // 버튼을 누를때마다 토글 - backSignal_LS
+            backSignal_LS = !backSignal_LS; // 버튼을 누를 때 마다 토글
         }
+
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            frontSignal_LS = !frontSignal_LS; // 버튼을 누를때마다 토글 - frontSignal_LS
+            frontSignal_LS = !frontSignal_LS; // 버튼을 누를 때 마다 토글
         }
+
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            backSignal_SOL = !backSignal_SOL; // 버튼을 누를때마다 토글 - backSignal_SOL
+            backSignal_SOL = !backSignal_SOL; // 버튼을 누를 때 마다 토글
         }
+
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            frontSignal_SOL = !frontSignal_SOL; // 버튼을 누를때마다 토글 - frontSignal_SOL
+            frontSignal_SOL = !frontSignal_SOL; // 버튼을 누를 때 마다 토글
 
-            if(frontSignal_SOL)
+            if (frontSignal_SOL)
             {
                 Vector3 dir = new Vector3(maxPos, rod.localPosition.y, rod.localPosition.z);
                 StartCoroutine(MoveCylinder(dir));
@@ -77,62 +116,85 @@ public class Cylinder_MPS : MonoBehaviour
     }
 
     // PLC 신호는 Logic에 의해 계속 켜져있음 -> 
-    IEnumerator MoveCylinder(Vector3 to) // 벡터로 만들어준다음 넣어주기
+    IEnumerator MoveCylinder(Vector3 to)
     {
         if (!isMoving)
         {
             isMoving = true;
 
-            // 앞방향으로
-            while (true) 
+            while (true)
             {
-                Vector3 dir = to - rod.localPosition; // 방향 정하기
-                float distance = dir.magnitude; // 거리1
+                Vector3 dir = to - rod.localPosition;
+                float distance = dir.magnitude;
 
                 if (distance < 0.1f)
                 {
                     isMoving = false;
-                    mrFrontLS.material.color = new Color(1, 0, 0, 0.7f);
+
+                    if (!isBack) // 앞쪽 끝에 왔을 때
+                    {
+                        TurnOnLS(false, true); // Front ON
+                        TurnOnLS(true, false); // Back OFF
+                        print("Front ON");
+                    }
+                    else if (isBack)
+                    {
+                        TurnOnLS(true, true);   // Back ON
+                        TurnOnLS(false, false); // Front OFF
+                        print("Back ON");
+                    }
+
                     break;
                 }
 
-                rod.localPosition += dir.normalized * speed * Time.deltaTime; // 방향은 그대로 유지한 채 길이를 1로 만든 '단위 벡터'
+                rod.localPosition += dir.normalized * speed * Time.deltaTime;
 
                 yield return null;
             }
+        }
+        else
+        {
+            TurnOnLS(true, false);  // Back LS OFF
+            TurnOnLS(false, false); // Front LS OFF
 
+            print("Back/Front OFF");
         }
     }
 
-    IEnumerator MoveForwardBySignal()
+    IEnumerator MoveForwardBySigal()
     {
         while (true)
         {
-            if(solenoidType == SolenoidType.단동형)
+            if (solenoidType == SolenoidType.단동형)
             {
-                yield return new WaitUntil(() => frontSignal_SOL); // true 안써도 true임
+                yield return new WaitUntil(() => frontSignal_SOL);
             }
             else
             {
                 yield return new WaitUntil(() => frontSignal_SOL);
             }
 
+            isBack = false;
+
             Vector3 dir = new Vector3(maxPos, rod.localPosition.y, rod.localPosition.z);
             yield return MoveCylinder(dir);
         }
     }
-    IEnumerator MoveBackwardBySignal()
+
+    IEnumerator MoveBackwardBySigal()
     {
         while (true)
         {
             if (solenoidType == SolenoidType.단동형)
             {
-                yield return new WaitUntil(() => !frontSignal_SOL); // False 안써도 False임
+                yield return new WaitUntil(() => !frontSignal_SOL);
             }
             else
             {
                 yield return new WaitUntil(() => backSignal_SOL);
             }
+
+            isBack = true;
 
             Vector3 dir = new Vector3(minPos, rod.localPosition.y, rod.localPosition.z);
             yield return MoveCylinder(dir);
