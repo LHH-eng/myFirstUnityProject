@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &5703146 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 782912109571275463, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
 --- !u!1 &10072209
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,6 +1077,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173608437}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &177316635 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 759714050507412772, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Toggle
 --- !u!1 &178490524
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,6 +1215,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 178490524}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &188148924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6551616965858681123, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
 --- !u!1 &201121287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1981,6 +2014,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 255094397}
   m_CullTransparentMesh: 1
+--- !u!114 &331070114 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 711470957939260475, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
 --- !u!1 &334729963
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,6 +3662,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 595064931}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &635943768 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4460597011502468410, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
+--- !u!114 &659933994 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1401480701856946666, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
+--- !u!114 &670433665 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7158974629159605745, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
 --- !u!1 &680358149
 GameObject:
   m_ObjectHideFlags: 0
@@ -5211,17 +5288,6 @@ Transform:
   - {fileID: 1217047348}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &966116340 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1843053681124358837, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-  m_PrefabInstance: {fileID: 980069394}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e591abb3f88e384aa71359cd3a097ba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &976979747
 GameObject:
   m_ObjectHideFlags: 0
@@ -5366,53 +5432,81 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 167060303095732879, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+    - target: {fileID: 3262108287882291412, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: m_text
+      value: Suction
+      objectReference: {fileID: 0}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: xPosInput
+      value: 
+      objectReference: {fileID: 188148924}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: xRotInput
+      value: 
+      objectReference: {fileID: 659933994}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: yPosInput
+      value: 
+      objectReference: {fileID: 331070114}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: yRotInput
+      value: 
+      objectReference: {fileID: 670433665}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: zPosInput
+      value: 
+      objectReference: {fileID: 635943768}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: zRotInput
+      value: 
+      objectReference: {fileID: 1841720390}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: speedInput
+      value: 
+      objectReference: {fileID: 5703146}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: durationInput
+      value: 
+      objectReference: {fileID: 2039360962}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: suctionToggle
+      value: 
+      objectReference: {fileID: 177316635}
+    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: steps.Array.size
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 167060303095732879, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+    - target: {fileID: 4670099709959309752, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4670099709959309752, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 167060303095732879, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+    - target: {fileID: 4670099709959309752, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 980069395}
+    - target: {fileID: 4670099709959309752, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 842767612927354376, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: m_Name
-      value: X- Button Position
+    - target: {fileID: 4670099709959309752, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTeachBtnClkEvent
       objectReference: {fileID: 0}
-    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: iK_Toolkit
-      value: 
-      objectReference: {fileID: 966116340}
-    - target: {fileID: 4199488708272378990, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: multiplier
-      value: 0.001
+    - target: {fileID: 4670099709959309752, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: RobotController, Assembly-CSharp
       objectReference: {fileID: 0}
-    - target: {fileID: 5163435375426913405, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: m_Name
-      value: X Rot InputField (TMP)
+    - target: {fileID: 4670099709959309752, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 5185518842341928979, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+    - target: {fileID: 5803826553177665454, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
       propertyPath: m_Name
-      value: Z+ Button Position
-      objectReference: {fileID: 0}
-    - target: {fileID: 5669920045464923453, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: m_Name
-      value: Y- Button  Position
-      objectReference: {fileID: 0}
-    - target: {fileID: 5723087970691089782, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: m_Name
-      value: X+ Button  Position
-      objectReference: {fileID: 0}
-    - target: {fileID: 5896692391992785458, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: m_Name
-      value: Y Rot InputField (TMP)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7361367595209378781, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      propertyPath: m_Name
-      value: Z- Button Position
+      value: Suction Text (TMP)
       objectReference: {fileID: 0}
     - target: {fileID: 8199117449119913086, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5454,9 +5548,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8605505698037502472, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+    - target: {fileID: 8362162149349979917, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
       propertyPath: m_Name
-      value: Y+ Button  Position
+      value: Suction Toggle
       objectReference: {fileID: 0}
     - target: {fileID: 8731714578828661948, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
       propertyPath: m_Name
@@ -5465,25 +5559,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5723087970691089782, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 980069397}
-    - targetCorrespondingSourceObject: {fileID: 8605505698037502472, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 980069407}
-    - targetCorrespondingSourceObject: {fileID: 5185518842341928979, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 980069406}
-    - targetCorrespondingSourceObject: {fileID: 842767612927354376, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 980069405}
-    - targetCorrespondingSourceObject: {fileID: 5669920045464923453, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 980069404}
-    - targetCorrespondingSourceObject: {fileID: 7361367595209378781, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 980069403}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
 --- !u!114 &980069395 stripped
 MonoBehaviour:
@@ -5496,306 +5572,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e7696b76392a57459403cb3ea7de9b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
---- !u!1 &980069396 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5723087970691089782, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-  m_PrefabInstance: {fileID: 980069394}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &980069397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980069396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnXPlusBtnDownEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnXPlusBtnUpEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!1 &980069398 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7361367595209378781, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-  m_PrefabInstance: {fileID: 980069394}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &980069399 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5669920045464923453, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-  m_PrefabInstance: {fileID: 980069394}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &980069400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 842767612927354376, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-  m_PrefabInstance: {fileID: 980069394}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &980069401 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5185518842341928979, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-  m_PrefabInstance: {fileID: 980069394}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &980069402 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8605505698037502472, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
-  m_PrefabInstance: {fileID: 980069394}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &980069403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980069398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnZMinusBtnDownEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnZMinusBtnUpEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &980069404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980069399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnYMinusBtnDownEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnYMinusBtnUpEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &980069405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980069400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnXMinusBtnDownEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnXMinusBtnUpEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &980069406
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980069401}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnZPlusBtnDownEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnZPlusBtnUpEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &980069407
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 980069402}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventTrigger
-  m_Delegates:
-  - eventID: 2
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnYPlusBtnDownEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 3
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 980069395}
-          m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
-          m_MethodName: OnYPlusBtnUpEvent
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
 --- !u!1 &981532012
 GameObject:
   m_ObjectHideFlags: 0
@@ -11831,6 +11607,17 @@ MonoBehaviour:
   m_MoveSpeed: 10
   m_MoveSpeedIncrement: 2.5
   m_Turbo: 10
+--- !u!114 &1841720390 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 797587816971952225, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
 --- !u!1 &1849809803
 GameObject:
   m_ObjectHideFlags: 0
@@ -12855,6 +12642,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2037298301}
   m_CullTransparentMesh: 1
+--- !u!114 &2039360962 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6296290569485293590, guid: e036f4e162a86bb4ab1e84c5ee83f098, type: 3}
+  m_PrefabInstance: {fileID: 980069394}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TMP_InputField
 --- !u!1 &2081978667
 GameObject:
   m_ObjectHideFlags: 0
