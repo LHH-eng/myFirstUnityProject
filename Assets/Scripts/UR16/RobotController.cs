@@ -26,6 +26,13 @@ public class RobotController : MonoBehaviour
         public float speed;
     }
 
+    [Header("PLC 신호들")]
+    public bool startSignal; // Y20
+    public bool cycleSignal; // Y21
+    public bool stopSignal;  // Y22
+    public bool eStopSignal; // Y23
+
+    [Header("기타 연결들")]
     public IK_toolkit iK_Toolkit;
     public List<Step> steps = new List<Step>();
     bool isXPlusOn, isYPlusOn, isZPlusOn, isXMinusOn, isYMinusOn, isZMinusOn;
@@ -33,8 +40,10 @@ public class RobotController : MonoBehaviour
     bool isXRotPlusOn, isYRotPlusOn, isZRotPlusOn;
     bool isXRotMinusOn, isYRotMinusOn, isZRotMinusOn;
     int xRot, yRot, zRot;
-    Vector3 origin;
+    Vector3 originPos;
+    Quaternion originRot;
     bool isMoving;
+    bool iscycle;
     public float multiplier = 0.01f;
     public float rotMultiplier = 5f;
 
@@ -84,7 +93,8 @@ public class RobotController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        origin = iK_Toolkit.ik.localPosition;
+        originPos = iK_Toolkit.ik.localPosition;
+        originRot = iK_Toolkit.ik.localRotation;
     }
 
     // Update is called once per frame
@@ -342,6 +352,8 @@ public class RobotController : MonoBehaviour
 
     Vector3 startPos;
     Vector3 endPos;
+    Quaternion startRot;
+    Quaternion endRot;
 
     /// <summary>
     /// steps 리스트를 순회하며, 로봇을 움직인다.
@@ -353,16 +365,26 @@ public class RobotController : MonoBehaviour
 
         for (int i = 0; i < steps.Count; i++)
         {
-            if (i == 0) startPos = origin;
-            else startPos = steps[i - 1].position;
+            if (i == 0)
+            {
+                startPos = originPos;
+                startRot = originRot;
+            }
+            else
+            {
+                startPos = steps[i - 1].position;
+                startRot = steps[i - 1].rotation;
+            }
 
             endPos = steps[i].position;
+            endRot = steps[i].rotation;
 
             float t = 0f;
             while (t < 1f)
             {
                 t += Time.deltaTime * steps[i].speed;
                 iK_Toolkit.ik.localPosition = Vector3.Lerp(startPos, endPos, t);
+                iK_Toolkit.ik.localRotation = Quaternion.Slerp(startRot, endRot, t);
                 yield return null;
             }
             
@@ -377,7 +399,8 @@ public class RobotController : MonoBehaviour
     /// </summary>
     public void OnCycleBtnClkEvent()
     {
-
+        if (isMoving || !iscycle) ;
+            // StartCoroutine(coCycleSequence());
     }
 
     /// <summary>
@@ -385,6 +408,7 @@ public class RobotController : MonoBehaviour
     /// </summary>
     public void OnStopBtnClkEvent()
     {
-
+        isMoving = false;
+        iscycle = false;
     }
 }
